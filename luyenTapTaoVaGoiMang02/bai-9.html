@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 9</title>
+</head>
+<body onload="kiemTra()">
+<script>
+    //Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+    // kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+    function kiemTra() {
+
+        let a = [2, 4, 65, 7, 4, 1, 4, 7, 2, 9];
+        let b = parseInt(prompt());
+        let c = 0;
+        let d;
+        for (let i = 0; i < a.length; i++) {
+            if (b === a[i]) {
+                c = c + 1;
+            }
+        }
+        if (c > 0) {
+            document.write(c);
+
+        } else {
+            document.write('giá trị của c - 1');
+        }
+
+    }
+
+</script>
+</body>
+</html>
